@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Dependency directories
+package-lock.json
+
+# Build files
+output.css
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+.temp/
+
+# Local development files
+dist/
+build/

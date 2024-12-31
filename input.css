@@ -12,6 +12,10 @@ body {
   @apply text-lg font-bold duration-300;
 }
 
+.title{
+  @apply font-Lobster text-yellow-500;
+}
+
 .nav-link:hover{
     @apply text-yellow-500;
 }
