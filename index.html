@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- boxicon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Remix Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Swiper's css  -->
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header id="navber" class="bg-green-950 text-white top-0 fixed w-full z-50">
+        <nav class="container flex justify-between items-center h-16 sm:h-20">
+            <div class="font-Lobster sm:text-2xl">AJ PLANTS</div>
+
+            <div id="nav-menu"
+                class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:bg-transparent">
+                <ul class="flex flex-col lg:flex-row items-center gap-8">
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#popular" class="nav-link">Popular</a>
+                    </li>
+
+                    <li>
+                        <a href="#review" class="nav-link">Review</a>
+                    </li>
+                </ul>
+
+                <div class="absolute bottom-0 -right-10 opacity-90">
+                    <img src="./assets/img/leaf-1.png" alt="leaf-image" class="w-32 lg:hidden">
+                </div>
+
+                <div class="absolute -top-5 left-0 rotate-90 opacity-90">
+                    <img src="./assets/img/leaf-2.png" alt="leaf-image" class="w-32 lg:hidden">
+                </div>
+            </div>
+            <div class="text-xl sm:text-3xl cursor-pointer z-50">
+                <i class="ri-menu-4-line lg:hidden" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main  -->
+    <main class="main">
+        <!-- home  -->
+        <section id="home" class="relative">
+            <div class="container">
+                <!-- blob 1  -->
+                <div class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+
+                <!-- blob 2  -->
+                <div class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute transform right-0 bottom-0"></div>
+
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!-- content  -->
+                    <div class="w-full space-y-5 lg:1/2">
+                        <div>
+                            <h1 class="pb-5">
+                                <span class="text-yellow-500">Plants</span> make a
+                                <br>
+                                positive
+                                <span class="text-yellow-500">impact</span> on <br>
+                                your environment
+                            </h1>
+
+                            <p class="text-slate-300 font-Lobster sm:pb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore numquam atque
+                                quibusdam veritatis ut voluptatum illum hic quibusdam numquam ut nisi fugiat blanditiis
+                                perferendis fuga optio aliquid id consectetur aspernatur iste! Nihil, maiores at?
+                            </p>
+
+                            <div class="flex flex-col gap-5 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10 ">
+                                <button class="btn">
+                                    <span>Shop Now</span>
+                                    <i class="ri-leaf-line"></i>
+                                </button>
+
+                                <button class="btn btn_outline">
+                                    <span>Know More</span>
+                                    <i class="ri-leaf-line"></i>
+                                </button>
+                            </div>
+
+                            <p class="text-xs font-Lobster text-slate-300 lg:pt-5 sm:pt-3">
+                                You will get 30-days free trial.
+                            </p>
+
+                            <div class="flex items-center gap-5 text-lg lg:pt-10 sm:pt-3">
+                                <i class="ri-facebook-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                                <i class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                                <i class="ri-twitter-x-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                                <i class="ri-linkedin-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image  -->
+                    <div class="w-full raletive lg:1/2">   
+                        <img src="./assets/img/home.png" alt="">
+
+                        <!-- leaf  -->
+                        <div class=" absolute -top-20 right-0 opacity-30 animate-movingY xl:top-5">
+                            <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+                        </div>
+                        <!-- flower  -->
+                        <div class="absolute bottom-0 left-0 opacity-30 xl:bottom-12 animate-rotating">
+                            <i class="ri-flower-line text-6xl text-yellow-500"></i>
+                        </div>
+                        <!-- plant  -->
+                        <div class=" hidden absolute -top-1  -left-5 opacity-30 lg:block animate-scalingUp">
+                            <i class="ri-plant-line text-6xl text-yellow-500"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- service  -->
+        <div class="bg-white text-green-900 py-20">
+            <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- card 1  -->
+                <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Fast <br>
+                            Delivery
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam?
+                    </p>
+                </div>
+
+                <!-- card 2  -->
+                <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Great Customer <br>
+                            Service
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam?
+                    </p>
+                </div>
+
+                <!-- card 3  -->
+                <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-plant-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Original <br>
+                            Plants
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam?
+                    </p>
+                </div>
+
+                <!-- card 4  -->
+                <div class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Affordable <br>
+                            Price
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- about  -->
+        <section id="about">
+
+        </section>
+
+        <!-- popular  -->
+        <section id="popular">
+
+        </section>
+
+        <!-- review  -->
+        <section id="review">
+
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+
+    </footer>
+
+    <!-- scroll up  -->
+
+    <!-- Swipere js  -->
+
+    <!-- Scrollreveal  -->
+
+    <!-- Main js  -->
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
